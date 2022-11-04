@@ -8,7 +8,7 @@ from .serializers import PostListSerializer, PostDetailSerializer
 
 # PostのAPI URL
 class PostList(generics.ListAPIView):
-    queryset = Post.objects.all()
+    queryset = Post.objects.order_by('-createTime')
     serializer_class = PostListSerializer
 
 
