@@ -1,13 +1,17 @@
-from django.shortcuts import render
-from rest_framework import viewsets
+from rest_framework import generics
 
 from .models import Post
-from .serializers import PostSerializer
+from .serializers import PostListSerializer, PostDetailSerializer
 
 
 # Create your views here.
 
 # PostのAPI URL
-class PostViewSet(viewsets.ModelViewSet):
+class PostList(generics.ListAPIView):
     queryset = Post.objects.all()
-    serializer_class = PostSerializer
+    serializer_class = PostListSerializer
+
+
+class PostDetail(generics.RetrieveAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostDetailSerializer

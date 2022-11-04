@@ -4,7 +4,13 @@ from .models import Post
 
 
 # REST API の設定
-class PostSerializer(serializers.ModelSerializer):
+class PostListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ['title', 'text', 'image', 'createTime', 'updateTime']
+        fields = ['id', 'title', 'image', 'createTime']
+
+
+class PostDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Post
+        fields = '__all__'
