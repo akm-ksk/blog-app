@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'blog',
 ]
 
@@ -47,6 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # これ
+    'django.middleware.common.CommonMiddleware',  # これ
 ]
 
 ROOT_URLCONF = 'djangoApp.urls'
@@ -120,3 +123,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # 画像URLの設定
 MEDIA_ROOT = BASE_DIR / "media_local"
+
+# React のアクセスもと
+CORS_ORIGIN_WHITELIST = (  # これ
+    'http://localhost:3000',
+)

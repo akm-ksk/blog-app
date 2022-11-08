@@ -1,0 +1,28 @@
+.postItem {
+}
+
+.postItemImgBox {
+    position: relative;
+    margin: 0 0 10px;
+    padding-bottom: 60%;
+}
+
+.postItemImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.postTitle {
+    font-size: var(--f14_20);
+    color: var(--black);
+    font-weight: bold;
+}
+
+.postDay {
+    color: var(--deepGray);
+    font-size: var(--f12_14);
+}

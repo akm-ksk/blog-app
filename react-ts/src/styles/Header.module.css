@@ -1,0 +1,30 @@
+.header {
+    border-bottom: 1px solid var(--gray);
+
+}
+
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 2%;
+    max-width: var(--maxDisplay);
+}
+
+.headerLogo {
+    font-size: var(--f24_36);
+    font-weight: bold;
+    color: var(--black);
+}
+
+.headerNavArea {
+    display: flex;
+}
+
+.headerNavAreaItem {
+    margin: 0 var(--m5_15);
+    font-size: var(--f14_28);
+    color: var(--black);
+}
+

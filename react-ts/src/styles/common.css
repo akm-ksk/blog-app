@@ -1,0 +1,37 @@
+:root {
+
+    /*カラー*/
+    --black: #000;
+    --gray: #aaa;
+    --lightGray: #eee;
+    --deepGray: #707070;
+    --white: #fff;
+
+    /*フォントサイズ*/
+    --f24_36: clamp(1.5rem, 1.3248rem + 0.7477vw, 2.25rem);
+    --f24_27: clamp(1.5rem, 1.4223rem + 0.3315vw, 1.6875rem);
+    --f14_28: clamp(0.875rem, 0.8166rem + 0.2492vw, 1.125rem);
+    --f14_20: clamp(0.875rem, 0.7874rem + 0.3738vw, 1.25rem);
+    --f14_16: clamp(0.875rem, 0.8232rem + 0.221vw, 1rem);
+    --f12_14: clamp(0.75rem, 0.7208rem + 0.1246vw, 0.875rem);
+
+    /* マージン / パディング */
+    --m80_120: clamp(5rem, 4.4159rem + 2.4922vw, 7.5rem);
+    --m45_120: clamp(2.8125rem, 0.8702rem + 8.2873vw, 7.5rem);
+    --m60_90: clamp(3.75rem, 3.3119rem + 1.8692vw, 5.625rem);
+    --m30_80: clamp(1.875rem, 0.5801rem + 5.5249vw, 5rem);
+    --m10_30: clamp(0.625rem, 0.107rem + 2.2099vw, 1.875rem);
+    --m10_15: clamp(0.625rem, 0.4955rem + 0.5525vw, 0.9375rem);
+    --m5_15: clamp(0.3125rem, 0.1665rem + 0.6231vw, 0.9375rem);
+
+
+    /*ディスプレイ幅*/
+    --maxDisplay: 1280px;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0 0 var(--m80_120);
+    max-width: var(--maxDisplay);
+}
+

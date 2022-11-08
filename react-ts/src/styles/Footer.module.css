@@ -1,0 +1,22 @@
+.footer {
+    padding: var(--m80_120) 0;
+    background-color: var(--lightGray);
+}
+
+.footerInner {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: var(--maxDisplay);
+}
+
+.footerLogo {
+    font-size: var(--f24_27);
+    font-weight: bold;
+    color: var(--black);
+}
+
+@media (max-width: 765px) {
+    .footerInner {
+        text-align: center;
+    }
+}

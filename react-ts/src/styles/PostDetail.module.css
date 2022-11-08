@@ -1,0 +1,32 @@
+.postArea {
+    padding: var(--m30_80) 2% var(--m80_120);
+}
+
+.postTitle {
+    margin: 0 0 var(--m10_15);
+    font-size: var(--f24_36);
+    font-weight: bold;
+    color: var(--black);
+}
+
+.dateBox {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0 15px;
+    margin: 0 0 var(--m10_15);
+}
+
+.dateItem {
+    font-size: var(--f14_16);
+}
+
+.imgBox {
+    margin: 0 0 var(--m10_30);
+}
+
+@media (max-width: 768px) {
+    .dateBox {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
